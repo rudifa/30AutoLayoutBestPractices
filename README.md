@@ -151,7 +151,12 @@ Now, pull into each of 3 Tip*PctView items their UI items.
 
 I will continue to play the proportional vertical placement game in each Tip*PctView, with the hypothesis that this might facilitate the adaptation to other screen sizes.
 
-Question: is there a way to specify the position of a view as a proportion of the container height? A constraint like A.CenterX = B.CenterX  does have a multiplier - I must investigate whether that would work.
+Question (opening a digression): is there a way to specify the position of a view as a proportion of the container's width or height? A constraint like A.CenterX = B.CenterX  does have a multiplier == 1.0. I must investigate what multiplier != 1.0 could be used for.
+
+Good guess: [Proportional Spacing with Auto Layout
+](https://useyourloaf.com/blog/proportional-spacing-with-auto-layout/) explains the use of the multiplier in center-to-center constraints between a superview center and a subview center, with worked examples.
+
+In my words: the usual formula Super.centerX = Sub.centerX can be interpreted as "Sub.centerX is at (1.0 * Super.width / 2.0) to the right of the leading edge of Super". Consequently, multiplier = 0.001 places the Sub.centerX almost on the leading edge of Super, and multiplier = 2.0 places it on the trailing edge of Super. Multiplier of <= 0.0 is forcibly replaced by 1.0 by the IB, while values above 2.0 appear to work.
 
 In the meantime, I reproduced the absolute vertical positions of the Callout e.t.c. items as given in Paul's design for iPhone 8, but relative to their containing Tip*PctView, and I centered them horizontally. No layout errors.
 
