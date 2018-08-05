@@ -70,12 +70,14 @@ And also, I'd like to find somewhere a formal discussion of intrisic sizes  (of 
 For a practical exercise, I'm taking Paul's initial design of the Tip Calculator, laid out for iPhone 8. It has no autolayout constraints and therefore does not adapt to other screen sizes.
 
 Looking at the design, I see 4 vertical regions:
-- reception-icon (top view) region
-- percentages (10/15/20%) region
-- your-bill region
-- calculate-tip button region
+- TopView (reception-icon)
+- PctView (percentages 10/15/20%)
+- BillView (your-bill with amount)
+- BottomView (calculate-tip button and bottom edge)
 
-I'll try to assign to these regions respectively 30% 40%, 18% ans 12%, total 100% and no tip to add.
+I'll try to assign to these regions respectively 30% 40%, 18% ans 12%, total 100% and no tip to add at the end.
+
+Better yet, I'll add 4 views right under the  SafeArea in the list, add different background colors, and manipulate their vertical sizes to match the Paul's UI items.
 
 
 ### Apple Xcode+IB peeves and wishes
