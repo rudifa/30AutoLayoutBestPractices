@@ -108,6 +108,16 @@ Repeat this for the next 3 views? Or align them horizontally?
 
 Tried to align the 4 views on leading and trailing edges. First view was OK, other 3 had same, but wrong trailing edge. IB aligned all 4 to the wrong trailing edge. Reset (in git).
 
+OK, do it individually, for the 3 remaining views, like I did for the TopView.
+
+Look, no errors!
+
+What a pleasure to select one constraint at a time and view it in 3 ways (scene - views list, design view, Size Inspector). 
+
+Of course, I did not yet deal with the real stuff - Paul's UI items, that go on top of my 4 views.
+
+
+
 
 
 ### Apple Xcode+IB peeves and wishes
