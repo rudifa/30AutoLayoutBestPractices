@@ -33,7 +33,35 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WzX-YJ-9Sl" userLabel="PctView">
                                 <rect key="frame" x="0.0" y="227" width="375" height="155.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nyt-Pf-9C6" userLabel="Tip10PctView">
+                                        <rect key="frame" x="23.5" y="0.0" width="109" height="155.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXg-SE-Hi6" userLabel="Tip15PctView">
+                                        <rect key="frame" x="132.5" y="0.0" width="109" height="155.5"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3mq-fL-Ypf" userLabel="Tip20PctView">
+                                        <rect key="frame" x="241.5" y="0.0" width="109" height="155.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" red="0.99864711490000002" green="1" blue="0.086546265649999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="Nyt-Pf-9C6" firstAttribute="height" secondItem="WzX-YJ-9Sl" secondAttribute="height" id="DXR-Gc-N1z"/>
+                                    <constraint firstItem="Nyt-Pf-9C6" firstAttribute="top" secondItem="WzX-YJ-9Sl" secondAttribute="top" id="DtN-Pt-zqw"/>
+                                    <constraint firstItem="MXg-SE-Hi6" firstAttribute="top" secondItem="WzX-YJ-9Sl" secondAttribute="top" id="SaG-hI-VK0"/>
+                                    <constraint firstItem="MXg-SE-Hi6" firstAttribute="leading" secondItem="Nyt-Pf-9C6" secondAttribute="trailing" id="TOf-0v-Wky"/>
+                                    <constraint firstItem="3mq-fL-Ypf" firstAttribute="height" secondItem="WzX-YJ-9Sl" secondAttribute="height" id="UP7-Kj-1dd"/>
+                                    <constraint firstItem="Nyt-Pf-9C6" firstAttribute="width" secondItem="WzX-YJ-9Sl" secondAttribute="width" multiplier="0.291" id="YGq-Ys-gBb"/>
+                                    <constraint firstItem="3mq-fL-Ypf" firstAttribute="leading" secondItem="MXg-SE-Hi6" secondAttribute="trailing" id="cNo-Tc-UMf"/>
+                                    <constraint firstItem="3mq-fL-Ypf" firstAttribute="width" secondItem="WzX-YJ-9Sl" secondAttribute="width" multiplier="0.291" id="gOH-2l-7jP"/>
+                                    <constraint firstItem="MXg-SE-Hi6" firstAttribute="width" secondItem="WzX-YJ-9Sl" secondAttribute="width" multiplier="0.291" id="h9H-Us-Y3f"/>
+                                    <constraint firstItem="3mq-fL-Ypf" firstAttribute="top" secondItem="WzX-YJ-9Sl" secondAttribute="top" id="jrB-fH-8G7"/>
+                                    <constraint firstItem="MXg-SE-Hi6" firstAttribute="height" secondItem="WzX-YJ-9Sl" secondAttribute="height" id="pia-h8-Drj"/>
+                                    <constraint firstItem="MXg-SE-Hi6" firstAttribute="centerX" secondItem="WzX-YJ-9Sl" secondAttribute="centerX" id="yFR-vd-Klu"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5va-t8-YdY" userLabel="BillView">
                                 <rect key="frame" x="0.0" y="382.5" width="375" height="155.5"/>

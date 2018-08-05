@@ -134,7 +134,18 @@ OK, start with those percent items in the PctView? Ah, but those callouts are al
 
 But, what did Paul say? Do everything right for the iPhone 8 first, then only deal with other models and their screen sizes.
 
+Working with auxiliary views served me well so far, so I'll create 3 Tip*PctView, each with its Tip Callout ImageView, the % label and the $ label.
 
+Looking at the Callouts, I need to allocate 0.291 of the PctView.width to each Tip*PctView. For simplicity, their height will be same as PctView.height. Color the middle one gray, keep the outer ones white.
+
+Fixed for all 3 Tip*PctView items' height to that of the container and top to the top of the container: no vertical errors.
+
+Fixed for all 3 the width to 0.291 * container.width.
+Next, center the middle one in the container, and make them touch each other horizontally.
+
+Done, no more layout errors.
+
+Now, pull into each of 3 Tip*PctView items their UI items.
 
 
 ### Apple Xcode+IB peeves and wishes
