@@ -145,7 +145,16 @@ Next, center the middle one in the container, and make them touch each other hor
 
 Done, no more layout errors.
 
+In fact, my PctView plays the role of a horizontal StackView, and perhaps it should be replaced by a StackView.
+
 Now, pull into each of 3 Tip*PctView items their UI items.
+
+I will continue to play the proportional vertical placement game in each Tip*PctView, with the hypothesis that this might facilitate the adaptation to other screen sizes.
+
+Question: is there a way to specify the position of a view as a proportion of the container height? A constraint like A.CenterX = B.CenterX  does have a multiplier - I must investigate whether that would work.
+
+In the meantime, I reproduced the absolute vertical positions of the Callout e.t.c. items as given in Paul's design for iPhone 8, but relative to their containing Tip*PctView, and I centered them horizontally. No layout errors.
+
 
 
 ### Apple Xcode+IB peeves and wishes
