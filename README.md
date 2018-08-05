@@ -99,6 +99,9 @@ Note in passing: IB reports missing (or conflicting) constraints only for UI ite
 
 My 4 views have horizontal constraints missing - I could have started there, it should be easy, as I want each of them to take the full width of the SafeArea.
 
+Easy? I have the choice of defining for each of these:
+center and width, leading edge and width, leading and trailing edges. I prefer center and width.
+
 
 
 
