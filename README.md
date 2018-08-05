@@ -67,6 +67,15 @@ OK, I will follow the guide.
 
 And also, I'd like to find somewhere a formal discussion of intrisic sizes  (of images, texts, anything else?), how these can vary and how it impacts the autolayout.
 
+For a practical exercise, I'm taking Paul's initial design of the Tip Calculator, laid out for iPhone 8. It has no autolayout constraints and therefore does not adapt to other screen sizes.
+
+Looking at the design, I see 4 vertical regions:
+- reception-icon (top view) region
+- percentages (10/15/20%) region
+- your-bill region
+- calculate-tip button region
+
+I'll try to assign to these regions respectively 30% 40%, 18% ans 12%, total 100% and no tip to add.
 
 
 ### Apple Xcode+IB peeves and wishes
