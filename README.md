@@ -102,6 +102,11 @@ My 4 views have horizontal constraints missing - I could have started there, it 
 Easy? I have the choice of defining for each of these:
 center and width, leading edge and width, leading and trailing edges. I prefer center and width.
 
+Ctrl-drag TopView to SafeArea: the little black dialog proposes Equal Widths and Horizontal Spacing, so I select these (shift key to hold the dialog, thanks Paul). I get Equal Width and TopView.trailing to SafeArea.trailing. Oh, well, I'll keep the Equal Width and change to TopView.leading to SafeArea.leading, just so.
+
+Repeat this for the next 3 views? Or align them horizontally?
+
+Tried to align the 4 views on leading and trailing edges. First view was OK, other 3 had same, but wrong trailing edge. IB aligned all 4 to the wrong trailing edge. Reset (in git).
 
 
 
