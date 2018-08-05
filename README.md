@@ -112,10 +112,27 @@ OK, do it individually, for the 3 remaining views, like I did for the TopView.
 
 Look, no errors!
 
-What a pleasure to select one constraint at a time and view it in 3 ways (scene - views list, design view, Size Inspector). 
+What a pleasure to select one constraint at a time and view it in 3 ways (scene - views list, design view, Size Inspector).
+
+Bonus: my 4 colored views look good on all 4 previews for devices of different sizes.
 
 Of course, I did not yet deal with the real stuff - Paul's UI items, that go on top of my 4 views.
 
+Start with the simplest case: TopView with its ReceiptIcon. Drag it (in the scene list) to become a subview of the TopView. Ctrl-drag between the two, select both Center * in Container. Done.
+
+Icon is centered in my TopView on all previews. It is just a little too big for the iPhone 4s.I could increase the vertical proportion of the TopView to accommodate.
+
+Wait, what are those orange circles on the Icon? Not an IB warning? Ah, no these are a part of the icon image, perhaps representing small change in Bitcoins. No problem with that.
+
+Which one do I take next?
+
+BillView seems simple, a Label, a TextField and an Image - a boring gray rectangle, but I must make it stretchable.
+
+Time to learn of intrinsic view sizes (texts? images?), stretching and localization issues (Your bill, Ihre Rechnung, Votre addition, ...).
+
+OK, start with those percent items in the PctView? Ah, but those callouts are also images to be made stretchable, perhaps.
+
+But, what did Paul say? Do everything right for the iPhone 8 first, then only deal with other models and their screen sizes.
 
 
 

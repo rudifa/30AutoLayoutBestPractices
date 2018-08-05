@@ -20,7 +20,16 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9e0-mQ-WBI" userLabel="TopView">
                                 <rect key="frame" x="0.0" y="20" width="375" height="207"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="ReceiptIcon" translatesAutoresizingMaskIntoConstraints="NO" id="T4y-W8-KMP">
+                                        <rect key="frame" x="100" y="27" width="174" height="153"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.1348665091" blue="0.056690331939999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="T4y-W8-KMP" firstAttribute="centerY" secondItem="9e0-mQ-WBI" secondAttribute="centerY" id="CUB-jk-Wl0"/>
+                                    <constraint firstItem="T4y-W8-KMP" firstAttribute="centerX" secondItem="9e0-mQ-WBI" secondAttribute="centerX" id="lwF-B4-KLy"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WzX-YJ-9Sl" userLabel="PctView">
                                 <rect key="frame" x="0.0" y="227" width="375" height="155.5"/>
@@ -52,10 +61,6 @@
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Bill Box" translatesAutoresizingMaskIntoConstraints="NO" id="6V6-sR-bdl">
                                 <rect key="frame" x="21" y="431" width="334" height="85"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="ReceiptIcon" translatesAutoresizingMaskIntoConstraints="NO" id="T4y-W8-KMP">
-                                <rect key="frame" x="101" y="54" width="174" height="153"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$15.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Nt-uD-0QL">
