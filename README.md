@@ -79,6 +79,28 @@ I'll try to assign to these regions respectively 30% 40%, 18% ans 12%, total 100
 
 Better yet, I'll add 4 views right under the  SafeArea in the list, add different background colors, and manipulate their vertical sizes to match the Paul's UI items.
 
+OK, I added the 4 views, dragging them into the item list, just under the SafeArea, set the colors. Next, I added a chain of vertical spacing constraints (3 bottom->top and 2 to the SafeArea top and bottom). Since my 4 views have no height specified as yet, these constraints are missing.
+
+Commit, so that I can play with the next steps safely.
+
+Just for fun, try to Add Missing Constraints to all: a large number of horizontal and vertical ones added : a horror. Reset (git via Xcode).
+
+Now select my 4 views and ask to add constraints to Selected. It adds horizontal and vertical constraints, pulling in one or two of Paul's UI items which I did not select. As anticipated, it's no good, reset.
+
+Next I will set for each view a vertical size as a proportion of the SafeArea height, 3 of them should suffice, I think.
+
+My proportions based on what I see in the layout will be 0.32, 0.24, 0.24, 0.20.
+
+Take the TopView to SafeArea, set EqualHeight (other 3 views disappear at the bottom), edit it to Multiplier = 0.32, OK.
+
+Take the next 2 views, set+edit EqualHeight to SafeArea height * 0.24, bingo: vertical Missing Constraints are gone.
+
+Note in passing: IB reports missing (or conflicting) constraints only for UI items that have been given at least 1 constraint, not before. One more reason to proceed slowly and methodically, one, or few UI items at a time.
+
+My 4 views have horizontal constraints missing - I could have started there, it should be easy, as I want each of them to take the full width of the SafeArea.
+
+
+
 
 ### Apple Xcode+IB peeves and wishes
 - It looks like there is no keyboard shortcut to the Preview tab in IB. It takes 3 clicks to get there, once you know where to click.
