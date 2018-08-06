@@ -231,6 +231,11 @@ Can't make the $100 label a subview of the BillBox. Nevertheless, constrain it r
 
 Now I can make the CALCULATE TIP button stretch by adding a trailing constraint to its superview.
 
+##### 15. When to Use Stack Views
+
+Well, not today. Also, leave for another day learning about IBDesignable classes.
+
+##### 16. Design Resizable and Scalable Images
 
 ### Apple Xcode+IB peeves and wishes
 - It looks like there is no keyboard shortcut to the Preview tab in IB. It takes 3 clicks to get there, once you know where to click.
