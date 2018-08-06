@@ -59,11 +59,11 @@ OK, it will take some work to master
 
 ##### 7. Work in One Direction
 
-IOW, from the origin at (0,0). It makes sense to work systematically.
+Indeed, it makes sense to work systematically. Preferably from NE to SW.
 
 _Stop reading this guide and try it on a test app._
 
-OK, I will follow the guide.
+OK, let me follow the guide.
 
 And also, I'd like to find somewhere a formal discussion of intrisic sizes  (of images, texts, anything else?), how these can vary and how it impacts the autolayout.
 
@@ -156,13 +156,22 @@ Question (opening a digression): is there a way to specify the position of a vie
 Good guess: [Proportional Spacing with Auto Layout
 ](https://useyourloaf.com/blog/proportional-spacing-with-auto-layout/) explains the use of the multiplier in center-to-center constraints between a superview center and a subview center, with worked examples.
 
-In my words: the usual formula Super.centerX = Sub.centerX can be interpreted as "Sub.centerX is at (1.0 * Super.width / 2.0) to the right of the leading edge of Super". Consequently, multiplier = 0.001 places the Sub.centerX almost on the leading edge of Super, and multiplier = 2.0 places it on the trailing edge of Super. Multiplier of <= 0.0 is forcibly replaced by 1.0 by the IB, while values above 2.0 appear to work.
+In my own words: visualise a superview as having a coordinate system with origin (0,0) at its upper left corner, and point (2,2) at its lower right corner. Use the multipliers (mX,mY) to place the center of a subview anywhere within this coordinate space.
 
 In the meantime, I reproduced the absolute vertical positions of the Callout e.t.c. items as given in Paul's design for iPhone 8, but relative to their containing Tip*PctView, and I centered them horizontally. No layout errors.
 
 Back to my BillView: place the BillBox and 3 labels as subviews, preserving their relative positions with top and leading constraints.
 
 Finally, the BottomView: place the Tip button and the bottom edge as subviews, preserving their relative positions with top and leading constraints.
+
+This completes my repositioning of all Paul's UI items, now relative to my 4 subviews. No errors, but a couple of Localization warnings, concerning the labels.
+
+Now, back to reading the 30 Practices guide.
+
+##### 8. The Light at the End of the Tunnel
+
+Indeed, it makes sense to work systematically. Preferably from NE to SW.
+
 
 
 ### Apple Xcode+IB peeves and wishes
