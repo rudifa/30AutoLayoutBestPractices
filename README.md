@@ -77,7 +77,7 @@ Looking at the design, I see 4 vertical regions:
 
 I'll try to assign to these regions respectively 30% 40%, 18% ans 12%, total 100% and no tip to add at the end.
 
-Better yet, I'll add 4 views right under the  SafeArea in the list, add different background colors, and manipulate their vertical sizes to match the Paul's UI items.
+Better yet, I'll add 4 views right under the  SafeArea in the scene list, add different background colors, and manipulate their vertical sizes to match the Paul's UI items.
 
 OK, I added the 4 views, dragging them into the item list, just under the SafeArea, set the colors. Next, I added a chain of vertical spacing constraints (3 bottom->top and 2 to the SafeArea top and bottom). Since my 4 views have no height specified as yet, these constraints are missing.
 
@@ -112,7 +112,7 @@ OK, do it individually, for the 3 remaining views, like I did for the TopView.
 
 Look, no errors!
 
-What a pleasure to select one constraint at a time and view it in 3 ways (scene - views list, design view, Size Inspector).
+What a pleasure to select one constraint at a time and view it in 3 places (the Document Outline scene list of views, the Canvas, the Size Inspector).
 
 Bonus: my 4 colored views look good on all 4 previews for devices of different sizes.
 
@@ -191,6 +191,39 @@ Ctrl-drag on the View to its superview, shift and click to add position constrai
 OK, keep calm, stop complaining, add the missing constraints and go to the next task. In this case, reset with git.
 
 ##### 9. The Hidden Layout Error Panel
+
+Well, it is not really hidden, the red or orange triangle that appears next to a Scent title is obvious, and the messages in the panel are fairly precise.
+
+##### 10. Change Background Colors
+
+Yes, I have been using that all along.
+
+##### 11. The Diagonal Drag
+
+Indeed, a good point here.
+
+Wait, did I just read "The right-click and drag..."? I was doing ctrl-drag all along, I think I picked it up in a CS193P Stanford course video. Anyway, both work.
+
+Also, I first learned in Paul's video that I can ctrl-drag onto a view itself to open a dialog for setting the view's width, height and aspect ratio.
+
+##### 12. The Shift Key Modifier
+
+Right, I asked myself how to add more than one constraint in that ctrl-drag black dialog, and I found the answer in the Paul's video: hold shift key, check constraints and add them.
+
+Elementary.
+
+Probably someone should start the **Interface Builder : the Missing Manual** project, crowdsourced on Github. Any volunteers?
+
+_You cannot add all the layout constraints from the canvas._
+
+Why would you? Working in the Document Outline is more precise, you can add views, rename or reorder them, change their superview, examine and add constraints.
+
+##### 13. Adding Difficult Constraints
+
+Right, Document Outline is the place to go to.
+
+
+##### 14. Fix the UIImageView Content Mode
 
 
 ### Apple Xcode+IB peeves and wishes
