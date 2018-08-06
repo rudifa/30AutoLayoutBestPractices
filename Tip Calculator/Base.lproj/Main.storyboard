@@ -140,7 +140,32 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5va-t8-YdY" userLabel="BillView">
                                 <rect key="frame" x="0.0" y="382.5" width="375" height="155.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mid-qe-vgJ">
+                                        <rect key="frame" x="21" y="22.5" width="54" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="textColor" red="0.48627450980392156" green="0.5490196078431373" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Bill Box" translatesAutoresizingMaskIntoConstraints="NO" id="6V6-sR-bdl">
+                                        <rect key="frame" x="21" y="48.5" width="334" height="85"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$100.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="udP-1X-QgO">
+                                        <rect key="frame" x="170" y="64.5" width="174" height="54"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="45"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
                                 <color key="backgroundColor" red="0.51330589429999995" green="1" blue="0.53966781480000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="6V6-sR-bdl" firstAttribute="leading" secondItem="5va-t8-YdY" secondAttribute="leading" constant="21" id="IeZ-Xt-tVZ"/>
+                                    <constraint firstItem="udP-1X-QgO" firstAttribute="top" secondItem="5va-t8-YdY" secondAttribute="top" constant="64.5" id="Iqx-JT-80p"/>
+                                    <constraint firstItem="mid-qe-vgJ" firstAttribute="leading" secondItem="5va-t8-YdY" secondAttribute="leading" constant="21" id="QV3-A9-blQ"/>
+                                    <constraint firstItem="mid-qe-vgJ" firstAttribute="top" secondItem="5va-t8-YdY" secondAttribute="top" constant="22.5" id="X7Y-co-wx5"/>
+                                    <constraint firstItem="udP-1X-QgO" firstAttribute="leading" secondItem="5va-t8-YdY" secondAttribute="leading" constant="170" id="aRs-Eh-JU6"/>
+                                    <constraint firstItem="6V6-sR-bdl" firstAttribute="top" secondItem="5va-t8-YdY" secondAttribute="top" constant="48.5" id="b5O-YX-Jdc"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHV-eH-S8Z" userLabel="BottomView">
                                 <rect key="frame" x="0.0" y="538" width="375" height="129"/>
@@ -150,24 +175,6 @@
                                 <rect key="frame" x="0.0" y="634" width="375" height="33"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Bill Box" translatesAutoresizingMaskIntoConstraints="NO" id="6V6-sR-bdl">
-                                <rect key="frame" x="21" y="431" width="334" height="85"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$100.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="udP-1X-QgO">
-                                <rect key="frame" x="170" y="447" width="174" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="45"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mid-qe-vgJ">
-                                <rect key="frame" x="21" y="405" width="54" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <color key="textColor" red="0.48627450980392156" green="0.5490196078431373" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24o-aO-THM">
                                 <rect key="frame" x="21" y="545" width="334" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
