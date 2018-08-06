@@ -27,7 +27,7 @@ Indeed. Maybe also commit it when it looks like a partial achievement.
 
 ##### 4. Relative and Centered Layouts
 
-Aha, sounds like there be a method in the autolayout madness. Being programmers, we like methods.
+Aha, sounds like there be a method in the Auto Layout madness. Being programmers, we like methods.
 
 _Tip: The default spacing between most iOS UI elements is 8 points, and 20 points on the edges._ Sounds good, will sure look good.
 
@@ -65,9 +65,9 @@ _Stop reading this guide and try it on a test app._
 
 OK, let me follow the guide.
 
-And also, I'd like to find somewhere a formal discussion of intrisic sizes  (of images, texts, anything else?), how these can vary and how it impacts the autolayout.
+And also, I'd like to find somewhere a formal discussion of intrisic sizes  (of images, texts, anything else?), how these can vary and how it impacts the Auto Layout.
 
-For a practical exercise, I'm taking Paul's initial design of the Tip Calculator, laid out for iPhone 8. It has no autolayout constraints and therefore does not adapt to other screen sizes.
+For a practical exercise, I'm taking Paul's initial design of the Tip Calculator, laid out for iPhone 8. It has no  constraints and therefore does not adapt to other screen sizes.
 
 Looking at the design, I see 4 vertical regions:
 - TopView (reception-icon)
@@ -170,8 +170,27 @@ Now, back to reading the 30 Practices guide.
 
 ##### 8. The Light at the End of the Tunnel
 
-Indeed, it makes sense to work systematically. Preferably from NE to SW.
+_Until you finish describing the position and size of your UI elements in a complete area, or subregion you will still see lots of red and blue._
 
+However, I can keep the number of red lines to a minimum by working on one subview at a time.
+
+Let me create some red lines:
+
+Add a new View to the scene: no red lines.
+
+Ctrl-drag on the View to itself, use shift and click to add Width and Height constraints. Now the **Missing Constraints** messages say, rightly, that the view needs constraints for the Xposition and the Y position.
+
+But look at those 6 red lines: all 4 sides of the View, and two red lines to the right and under the bottom that seem to suggest **missing** size constraints!
+
+Ctrl-drag on the View to its superview, shift and click to add position constraints, leading, center or whatever, in both directions. Now the red lines are replaced by blue ones, as expected.
+
+Add another View to the scene: no red lines.
+
+Ctrl-drag on the View to its superview, shift and click to add position constraints, trailing for example. Again, the **Missing Constraints** messages say what is missing - the width/height or another position constraint, in each direction. But, there are 6 red lines, the 4 that border the View and two that suggest that the position constraints I added are wrong - while they are only insufficient.
+
+OK, keep calm, stop complaining, add the missing constraints and go to the next task. In this case, reset with git.
+
+##### 9. The Hidden Layout Error Panel
 
 
 ### Apple Xcode+IB peeves and wishes
