@@ -225,6 +225,12 @@ Right, Document Outline is the place to go to.
 
 ##### 14. Fix the UIImageView Content Mode
 
+I can now make the BillBox ImageView stretch by adding a trailing constraint to its superview. The Content Mode does not make any difference in this case.
+
+Can't make the $100 label a subview of the BillBox. Nevertheless, constrain it relative to BillBox anf constrain its height to what it is.
+
+Now I can make the CALCULATE TIP button stretch by adding a trailing constraint to its superview.
+
 
 ### Apple Xcode+IB peeves and wishes
 - It looks like there is no keyboard shortcut to the Preview tab in IB. It takes 3 clicks to get there, once you know where to click.
