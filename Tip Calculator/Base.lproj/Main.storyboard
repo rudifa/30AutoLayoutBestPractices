@@ -147,8 +147,12 @@
                                         <color key="textColor" red="0.48627450980392156" green="0.5490196078431373" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Bill Box" translatesAutoresizingMaskIntoConstraints="NO" id="6V6-sR-bdl">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Bill Box" translatesAutoresizingMaskIntoConstraints="NO" id="6V6-sR-bdl">
                                         <rect key="frame" x="21" y="48.5" width="334" height="85"/>
+                                        <color key="backgroundColor" red="0.81265920560000005" green="0.88647487079999998" blue="0.93009507479999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="85" id="PTJ-ya-ZjL"/>
+                                        </constraints>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$100.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="udP-1X-QgO">
                                         <rect key="frame" x="170" y="64.5" width="174" height="54"/>
@@ -165,6 +169,7 @@
                                     <constraint firstItem="mid-qe-vgJ" firstAttribute="top" secondItem="5va-t8-YdY" secondAttribute="top" constant="22.5" id="X7Y-co-wx5"/>
                                     <constraint firstItem="udP-1X-QgO" firstAttribute="leading" secondItem="5va-t8-YdY" secondAttribute="leading" constant="170" id="aRs-Eh-JU6"/>
                                     <constraint firstItem="6V6-sR-bdl" firstAttribute="top" secondItem="5va-t8-YdY" secondAttribute="top" constant="48.5" id="b5O-YX-Jdc"/>
+                                    <constraint firstAttribute="trailing" secondItem="6V6-sR-bdl" secondAttribute="trailing" constant="20" id="p0J-pn-uJo"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHV-eH-S8Z" userLabel="BottomView">
@@ -184,6 +189,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="24o-aO-THM" firstAttribute="leading" secondItem="lHV-eH-S8Z" secondAttribute="leading" constant="21" id="7Zt-Dg-5LZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="24o-aO-THM" secondAttribute="trailing" constant="20" id="IXY-OT-Jbb"/>
                                     <constraint firstItem="24o-aO-THM" firstAttribute="top" secondItem="lHV-eH-S8Z" secondAttribute="top" constant="7" id="Vpy-jn-NuV"/>
                                     <constraint firstItem="atx-Dl-rHh" firstAttribute="leading" secondItem="lHV-eH-S8Z" secondAttribute="leading" id="bjg-jP-uMk"/>
                                     <constraint firstItem="atx-Dl-rHh" firstAttribute="top" secondItem="lHV-eH-S8Z" secondAttribute="top" constant="96" id="e9J-MD-5Bj"/>
