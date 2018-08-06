@@ -169,20 +169,26 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHV-eH-S8Z" userLabel="BottomView">
                                 <rect key="frame" x="0.0" y="538" width="375" height="129"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24o-aO-THM">
+                                        <rect key="frame" x="21" y="7" width="334" height="67"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                        <state key="normal" title="CALCULATE TIP" backgroundImage="YellowButton">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="BottomEdge" translatesAutoresizingMaskIntoConstraints="NO" id="atx-Dl-rHh">
+                                        <rect key="frame" x="0.0" y="96" width="375" height="33"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="24o-aO-THM" firstAttribute="leading" secondItem="lHV-eH-S8Z" secondAttribute="leading" constant="21" id="7Zt-Dg-5LZ"/>
+                                    <constraint firstItem="24o-aO-THM" firstAttribute="top" secondItem="lHV-eH-S8Z" secondAttribute="top" constant="7" id="Vpy-jn-NuV"/>
+                                    <constraint firstItem="atx-Dl-rHh" firstAttribute="leading" secondItem="lHV-eH-S8Z" secondAttribute="leading" id="bjg-jP-uMk"/>
+                                    <constraint firstItem="atx-Dl-rHh" firstAttribute="top" secondItem="lHV-eH-S8Z" secondAttribute="top" constant="96" id="e9J-MD-5Bj"/>
+                                </constraints>
                             </view>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="BottomEdge" translatesAutoresizingMaskIntoConstraints="NO" id="atx-Dl-rHh">
-                                <rect key="frame" x="0.0" y="634" width="375" height="33"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24o-aO-THM">
-                                <rect key="frame" x="21" y="545" width="334" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                                <state key="normal" title="CALCULATE TIP" backgroundImage="YellowButton">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

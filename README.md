@@ -160,6 +160,9 @@ In my words: the usual formula Super.centerX = Sub.centerX can be interpreted as
 
 In the meantime, I reproduced the absolute vertical positions of the Callout e.t.c. items as given in Paul's design for iPhone 8, but relative to their containing Tip*PctView, and I centered them horizontally. No layout errors.
 
+Back to my BillView: place the BillBox and 3 labels as subviews, preserving their relative positions with top and leading constraints.
+
+Finally, the BottomView: place the Tip button and the bottom edge as subviews, preserving their relative positions with top and leading constraints.
 
 
 ### Apple Xcode+IB peeves and wishes
